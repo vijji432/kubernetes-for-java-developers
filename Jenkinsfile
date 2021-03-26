@@ -12,7 +12,7 @@ stages {
 stage ('clone') {
   steps { 
     https://github.com/vijji432/kubernetes-for-java-developers.git
-      }
+      
 }  
   stage ('build docker image') {
   steps { 
