@@ -10,7 +10,11 @@ agent any
 stages {
 
 stage ('clone') {
-    https://github.com/vijji432/kubernetes-for-java-developers.git
+     git(
+       url: 'git clone https://github.com/vijji432/kubernetes-for-java-developers.git',
+       credentialsId: 'git',
+       branch: "master"
+    )
 }  
   stage ('build docker image') {
   steps { 
